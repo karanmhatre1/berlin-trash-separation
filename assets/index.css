@@ -1,0 +1,153 @@
+/* Global Styles */
+
+body {
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #1E1D1A;
+    color: #FCFBF1;
+}
+
+h1 {
+    font-family: 'Coiny', serif;
+    font-size: 32px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.trash-list {
+    width: 100%;
+    overflow: hidden;
+}
+
+.trash-list ul {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin-left: 100px;
+    list-style: none;
+    position: relative;
+}
+
+.trash-list ul li {
+    height: 272px;
+    width: 200px;
+    float: left;
+    flex: 0 0 auto; 
+    text-align: center;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.trash-list img {
+    width: 100%;
+}
+
+.bins {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.bins ul {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto; 
+    column-gap: 10px;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+.bins ul li {
+    align-self: center;
+    text-align: center;
+}
+
+.bins ul li img {
+    width: 60%;
+}
+
+.score {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.score div {
+    width: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-radius: 100px;
+    border: 2px solid #fff;
+}
+
+.scoring-circles {
+    width: 100%;
+}
+
+.scoring-circles ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0.5%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.scoring-circles ul li {
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.scoring-circles ul li > div {
+    position: absolute;
+    top:-28px;
+}
+
+.scoring-circles ul li img {
+    width: 100%;
+}
+
+.scoring-circles ul li span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: #3C3A34;
+}
+
+.scoring-circles ul li span.correct {
+    background-color: forestgreen;
+}
+
+.scoring-circles ul li span.wrong {
+    background-color: red;
+}
+
+img.badge {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+@media (min-width: 960px) {
+
+}
+
